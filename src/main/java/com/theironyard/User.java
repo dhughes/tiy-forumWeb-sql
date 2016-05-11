@@ -1,9 +1,12 @@
+package com.theironyard;
+
 /**
  * Created by doug on 5/5/16.
  */
 public class User {
-    String name;
-    String password;
+    private String name;
+    private String password;
+    private int id = 0;
 
     public User(String name, String password) {
         this.name = name;
@@ -24,5 +27,14 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
